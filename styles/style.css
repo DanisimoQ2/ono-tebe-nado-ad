@@ -17,33 +17,46 @@ h1, h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    width: 391.48px;
-    height: 22px;
 }
 
 .inline-list {
     list-style: none;     
-    display: flex;
-    gap: 25px;   
-    padding: 0;
-    margin: 0;               
+    display: flex; 
     align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0; 
+    width: 391.48px;
+    height: 22px;             
 }
 
 .inline-list li {
     position: relative;
     padding-left: 0;
+    align-items: center;
 }
 
-.inline-list li:nth-child(n+2)::before {
-    content: '';
-    position: absolute;
-    left: -16px;               
-    top: 50%;
-    transform: translateY(-50%);
+.inline-list li:not(:first-child)::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: -12px; /* ← позиция относительно li, а не всей страницы! */
+  top: 50%;
+  transform: translateY(-50%); /* центрирует по вертикали */
+  border: 0.5px solid #000000;
+  border-radius: 50%; /* чтобы была круглая точка */
+}
+
+.dot {
+    box-sizing: border-box;
+    position: relative;
     width: 6px;
     height: 6px;
-    border: 1px solid currentColor;
+    margin-top: 9px;
+    margin-bottom: 6px;
+    border: 0.5px solid #000000;
     border-radius: 50%;
 }
 
@@ -105,7 +118,7 @@ h1, h3 {
     position: relative;
     width: 1100px;
     height: 757px;
-    background: url('../images/cover.jpg');
+    background: url('../images/cover.jpg') center/cover no-repeat;
     z-index: -1;
 }
 
@@ -236,7 +249,7 @@ h1, h3 {
 .lot-card {
     width: 334px;
     height: 596px;
-    margin-top: 74px;
+    margin-top: 27px;
     position: relative;
     overflow: hidden;
     border-radius: 0;
