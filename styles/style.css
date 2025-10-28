@@ -42,11 +42,11 @@ h1, h3 {
   position: absolute;
   width: 6px;
   height: 6px;
-  left: -12px; /* ← позиция относительно li, а не всей страницы! */
+  left: -12px;
   top: 50%;
-  transform: translateY(-50%); /* центрирует по вертикали */
+  transform: translateY(-50%);
   border: 0.5px solid #000000;
-  border-radius: 50%; /* чтобы была круглая точка */
+  border-radius: 50%;
 }
 
 .dot {
@@ -238,7 +238,7 @@ h1, h3 {
 .lots-container {
     display: flex;
     flex-direction: row;
-    height: 723px;
+    height: 653px;
     gap: 25px;
     padding: 0 24px;
     justify-content: space-between;
@@ -258,17 +258,17 @@ h1, h3 {
 }
 
 .lot-card:nth-child(1) {
-    background: url('../images/card-lot-01.jpg') no-repeat center center;
+    background: url('../images/card-lot-01.jpg') center/cover no-repeat;
     z-index: -1;
 }
 
 .lot-card:nth-child(2) {
-    background: url('../images/card-lot-02.jpg') no-repeat center center;
+    background: url('../images/card-lot-02.jpg') center/cover no-repeat;
     z-index: -1;
 }
 
 .lot-card:nth-child(3) {
-    background: url('../images/card-lot-03.jpg') no-repeat center center;
+    background: url('../images/card-lot-03.jpg') center/cover no-repeat;
     z-index: -1;
 }
 
