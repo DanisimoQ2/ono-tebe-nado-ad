@@ -20,14 +20,14 @@ h1, h3 {
 }
 
 .inline-list {
-    list-style: none;     
-    display: flex; 
+    list-style: none;
+    display: flex;
     align-items: center;
     gap: 24px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
     width: 391.48px;
-    height: 22px;             
+    height: 22px;
 }
 
 .inline-list li {
@@ -102,7 +102,7 @@ h1, h3 {
 .underline {
     text-decoration: none;
     position: relative;
-    color: currentColor; 
+    color: currentColor;
     display: inline;
     padding: 0;
     border-bottom: 2px solid currentColor;
@@ -129,7 +129,7 @@ h1, h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     z-index: 0;
 }
 
@@ -200,7 +200,6 @@ h1, h3 {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: justify;
-    line-height: 1;
 }
 
 .subline::after {
@@ -258,19 +257,19 @@ h1, h3 {
     z-index: 1;
 }
 
-.lot-card:nth-child(1) { 
-    background: url('../images/card-lot-01.jpg') no-repeat center center; 
-    z-index: -1; 
+.lot-card:nth-child(1) {
+    background: url('../images/card-lot-01.jpg') no-repeat center center;
+    z-index: -1;
 }
 
-.lot-card:nth-child(2) { 
-    background: url('../images/card-lot-02.jpg') no-repeat center center; 
-    z-index: -1; 
+.lot-card:nth-child(2) {
+    background: url('../images/card-lot-02.jpg') no-repeat center center;
+    z-index: -1;
 }
 
-.lot-card:nth-child(3) { 
-    background: url('../images/card-lot-03.jpg') no-repeat center center; 
-    z-index: -1; 
+.lot-card:nth-child(3) {
+    background: url('../images/card-lot-03.jpg') no-repeat center center;
+    z-index: -1;
 }
 
 .lot-card::before {
@@ -302,9 +301,7 @@ h1, h3 {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.3;
-    font-weight: 700;
     font-size: 22px;
-    line-height: 120%;
 }
 
 .card-content p {
@@ -312,7 +309,6 @@ h1, h3 {
     opacity: 0.9;
     font-weight: 400;
     font-size: 20px;
-    line-height: 120%;
 }
 
 .more {
@@ -342,8 +338,8 @@ h1, h3 {
 .logo-block {
     width: 240px;
     height: 240px;
-    background-color: #000000;    
-    border-radius: 50%;    
+    background-color: #000000;
+    border-radius: 50%;
     z-index: 0;
     margin-top: 35px;
     margin-left: 47px;
@@ -411,7 +407,7 @@ h1, h3 {
 }
 
 .nav-menu-bottom ul {
-    list-style: none; 
+    list-style: none;
     text-decoration: none;
     text-align: center;
 }
